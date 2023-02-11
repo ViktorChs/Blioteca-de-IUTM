@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.body_Img-Logo {
+  margin: 0 10px;
+  height: 130px;
+  width: 130px;
+  display: flex;
+}
+.body_Container-Center-Img {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+.body_Center-Img-Text {
+  position: absolute;
+  font-family: "Inter", sans-serif;
+}
+.body_Center-Img {
+  display: block;
+  margin: auto;
+  width: 350px;
+  max-width: 100%;
+}
+.body_Lineup-Text {
+  background-color: black;
+  width: 40px;
+  height: 5px;
+  margin: 0 0 5px 47px;
+}
+.body_Text-Description {
+  font-family: roboto;
+  font-size: 12px;
+  display: block;
+  width: 300px;
+  color: rgb(116, 116, 116);
+  margin: 0;
+  overflow: visible;
+  padding: 0;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0;
+  text-shadow: none;
+  text-transform: none;
+  visibility: visible;
+  white-space: normal;
+}
+.body_Container-Button-Arrow {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 20px 0 0;
+}
+.body_Content-Arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  background-image: linear-gradient(to top, #d8d9db 0%, #fff 80%, #fdfdfd 100%);
+  border-radius: 30px;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+  box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.507);
+}
+.body_Content-Arrow:hover {
+  box-shadow: 0 4px 3px 1px #fcfcfc, 0 6px 8px #d6d7d9, 0 -4px 4px #cecfd1,
+    0 -6px 4px #fefefe, inset 0 0 3px 3px #cecfd1;
+}
+
+.body_Content-Arrow:active {
+  box-shadow: 0 4px 3px 1px #fcfcfc, 0 6px 8px #d6d7d9, 0 -4px 4px #cecfd1,
+    0 -6px 4px #fefefe, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+}
+
+.body_Content-Arrow:focus {
+  box-shadow: 0 4px 3px 1px #fcfcfc, 0 6px 8px #d6d7d9, 0 -4px 4px #cecfd1,
+    0 -6px 4px #fefefe, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+}
+
+@media only screen and (min-width: 595px) {
+}
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1200px) {
+}
