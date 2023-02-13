@@ -6,9 +6,10 @@
 
 .body_Img-Logo {
   margin: 0 10px;
-  height: 130px;
-  width: 130px;
-  display: flex;
+  height: 100px;
+  width: 100px;
+  max-width: 100%;
+  display: block;
 }
 .body_Container-Center-Img {
   display: flex;
@@ -26,17 +27,23 @@
   width: 350px;
   max-width: 100%;
 }
+.body_Container-Text-Description {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: auto;
+  margin-top: 43px;
+}
 .body_Lineup-Text {
   background-color: black;
   width: 40px;
   height: 5px;
-  margin: 0 0 5px 47px;
 }
 .body_Text-Description {
   font-family: roboto;
   font-size: 12px;
   display: block;
-  width: 300px;
   color: rgb(116, 116, 116);
   margin: 0;
   overflow: visible;
