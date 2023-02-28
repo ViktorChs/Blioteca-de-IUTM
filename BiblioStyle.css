@@ -28,6 +28,22 @@ body{
   color: rgb(69 140 149);
   letter-spacing: 8px;
 }
+.loader::after, .loader::before {
+  animation: loader 10s linear infinite;
+  content: '';
+  border: 2px solid #00000017;
+  width: 700px;
+  height: 700px;
+  position: fixed;
+  border-radius: 50%;
+  top: -8%;
+  right: -44vw;
+  z-index: 3;
+}
+.loader::after{
+  opacity: 0;
+  animation-delay: 5s;
+}
 .body_Center-Img {
   display: block;
   margin: auto;
@@ -95,6 +111,7 @@ body{
   border: 1px solid transparent;
   transition: all 0.2s ease;
   box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.507);
+  z-index: 1;
 }
 .body_Content-Arrow:hover {
   box-shadow: 0 4px 3px 1px #fcfcfc, 0 6px 8px #d6d7d9, 0 -4px 4px #cecfd1,
@@ -164,9 +181,11 @@ body{
   padding: 10px 5px;
   font-size: 16px;
   color: #555;
+  margin-right: 16px;
 }
 .input-field.third-wrap {
   width: 74px;
+  margin-left: 10px;
 }
 select {
   padding: 10px;
@@ -256,6 +275,20 @@ main.content_books {
 		transform: translateY(0);
 	}
 }
+
+@keyframes loader{
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100%{
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+
+
 @keyframes exittoggle {
 	0% {
 		opacity: 1;
