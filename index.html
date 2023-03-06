@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <img class="body_Img-Logo" src="Logo.png" alt="">
+    <img class="body_Img-Logo" link="#" src="Logo.png" alt="">
     <section class="section_ini">
         <div class="body_Container-Center-Img">
             <h1 class="body_Center-Img-Text">BIBLIOTECA</h1>
@@ -45,16 +45,13 @@
                 <div class="inner-form">
                 <div class="input-field first-wrap">
                 <div class="input-select">
-                <select data-trigger="" name="choices-single-defaul">
-                <option placeholder="">Materias
-                </option>
-                <option>New Arrivals</option>
-                <option>Sale</option>
-                <option>Ladies</option>
-                <option>Men</option>
-                <option>Clothing</option>
-                <option>Footwear</option>
-                <option>Accessories</option>
+                <select onchange="filterM()"  data-trigger="" name="choices-single-defaul">
+                <option placeholder="">Materias</option>
+                <option>Matematica</option>
+                <option>Sociocritica</option>
+                <option>Programacion</option>
+                <option>Proyecto</option>
+                <option>Algoritmo</option>
                 </select>
                 </div>
                 </div>
@@ -68,11 +65,15 @@
                 </svg>
                 </button>
                 </div>
+                
                 </div>
+                
+
                 </form>
                 </div>
+                <button class="section_2-bts-module-display"><img src="descending.svg" alt=""></button>
+                <button class="section_2-bts-module-display"><img src="grid.svg" alt=""></button>
         <main class="content_books">
-
         </main>
 
     </section>

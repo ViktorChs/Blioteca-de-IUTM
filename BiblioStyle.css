@@ -38,7 +38,6 @@ body{
   border-radius: 50%;
   top: -8%;
   right: -44vw;
-  z-index: 3;
 }
 .loader::after{
   opacity: 0;
@@ -212,6 +211,21 @@ svg.svg-inline--fa.fa-search.fa-w-16 {
   flex-direction: column;
   font-family: 'Nunito', sans-serif;
 }
+.section_2-bts-module-display{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-image: linear-gradient(to top, #d8d9db 0%, #fff 80%, #fdfdfd 100%);
+    border-radius: 30px;
+    border: 1px solid transparent;
+    transition: all 0.2s ease;
+
+}
+
 main.content_books {
   width: 100%;
   display: flex;
