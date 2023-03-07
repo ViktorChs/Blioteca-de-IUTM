@@ -31,7 +31,7 @@ body{
 .loader::after, .loader::before {
   animation: loader 10s linear infinite;
   content: '';
-  border: 2px solid #00000017;
+  border: 2px solid #0000003b;
   width: 700px;
   height: 700px;
   position: fixed;
@@ -181,6 +181,7 @@ body{
   font-size: 16px;
   color: #555;
   margin-right: 16px;
+  display: none;
 }
 .input-field.third-wrap {
   width: 74px;
@@ -200,6 +201,7 @@ select {
   background: white;
   width: 41px;
   height: 38px;
+  display: none;
 }
 svg.svg-inline--fa.fa-search.fa-w-16 {
   width: 16px;
@@ -210,6 +212,10 @@ svg.svg-inline--fa.fa-search.fa-w-16 {
   display: none;
   flex-direction: column;
   font-family: 'Nunito', sans-serif;
+}
+.section_2-books-display-bts{
+display: flex;
+gap: 10px;
 }
 .section_2-bts-module-display{
   display: flex;
@@ -234,6 +240,7 @@ main.content_books {
   flex-wrap: wrap;
   justify-content: center;
   gap: 18px;
+  margin: 40px 0
 }
 .book {
   background: rgb(255 255 255);
@@ -247,18 +254,38 @@ main.content_books {
   align-items: center;
 
   animation: myAnim 1s ease 0s 1 normal forwards;
+  transition: height 2s ease 10ms;
+
 }
 .book img{
   width: 9em;
   height: 10em;
   border-radius: 7px;
   object-fit: fill;
+  transition: height 2s ease 10ms;
+
 }
 .content_books h3 {
   font-size: 12px;
   text-align: center;
   width: 80%;
 }
+/* state active books */
+.book.active{
+  height: 5em;
+  width: 17em;
+  flex-direction: row;
+  align-items: center;
+  animation: myAnim 1s ease 0s 1 normal forwards;
+  flex-wrap: nowrap;
+}
+.book img.active {
+  width: 5em;
+  height: 5em;
+  border-radius: 7px 0px 0px 7px;
+  object-fit: fill;
+}
+/* - - - -  - - - -*/
 @media only screen and (min-width: 595px) {
   .input-field.input-field.first-wrap{
     margin-bottom: unset;
