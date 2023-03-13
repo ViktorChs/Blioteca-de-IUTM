@@ -3,9 +3,9 @@ let bookArchive = [
     id: 1,
     materia: "Matematica",
     nombre: "Metodología de investigación Para qué",
-    desc: "Este libro se suma a la extensa y variada producción sobre cuestiones metodológicas. No pretendemos ofreceruna mirada original ni fundacional sobre estos saberes, solo aspiramos a participar y tomar posición frente a algunas de las reflexiones y debates que transitan por las aulas",
+    desc: "Este libro se suma a la extensa y variada producción sobre cuestiones metodológicas",
     img: "metodologia_de_la_investigacion_para_que.PNG",
-    link: "a",
+    link: "https://github.com/ViktorChs",
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ let bookArchive = [
     nombre: "Metodología de investigación 4 edicion",
     desc: "Este libro se suma a la extensa y variada producción sobre cuestiones metodológicas. No pretendemos ofreceruna mirada original ni fundacional sobre estos saberes, solo aspiramos a participar y tomar posición frente a algunas de las reflexiones y debates que transitan por las aulas",
     img: "metodologia_de_la_investigacion_4.PNG",
-    link: "a",
+    link: "https://github.com/ViktorChs",
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ let bookArchive = [
     nombre: "a Metodología de investigación Para qué",
     desc: "Este libro se suma a la extensa y variada producción sobre cuestiones metodológicas. No pretendemos ofreceruna mirada original ni fundacional sobre estos saberes, solo aspiramos a participar y tomar posición frente a algunas de las reflexiones y debates que transitan por las aulas",
     img: "metodologia_de_la_investigacion_para_que.PNG",
-    link: "a",
+    link: "https://github.com/ViktorChs",
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ let bookArchive = [
     nombre: "b Metodología de investigación 4 edicion",
     desc: "Este libro se suma a la extensa y variada producción sobre cuestiones metodológicas. No pretendemos ofreceruna mirada original ni fundacional sobre estos saberes, solo aspiramos a participar y tomar posición frente a algunas de las reflexiones y debates que transitan por las aulas",
     img: "metodologia_de_la_investigacion_4.PNG",
-    link: "a",
+    link: "https://github.com/ViktorChs",
   },
   {
     id: 5,
@@ -37,7 +37,7 @@ let bookArchive = [
     nombre: "investigación Para qué",
     desc: "Este libro se suma a la extensa y variada producción sobre cuestiones metodológicas. No pretendemos ofreceruna mirada original ni fundacional sobre estos saberes, solo aspiramos a participar y tomar posición frente a algunas de las reflexiones y debates que transitan por las aulas",
     img: "metodologia_de_la_investigacion_para_que.PNG",
-    link: "a",
+    link: "https://github.com/ViktorChs",
   },
   {
     id: 6,
@@ -45,7 +45,7 @@ let bookArchive = [
     nombre: "Humano demaciado humano",
     desc: "Este libro se suma a la extensa y variada producción sobre cuestiones metodológicas. No pretendemos ofreceruna mirada original ni fundacional sobre estos saberes, solo aspiramos a participar y tomar posición frente a algunas de las reflexiones y debates que transitan por las aulas",
     img: "metodologia_de_la_investigacion_4.PNG",
-    link: "a",
+    link: "https://github.com/ViktorChs",
   },
   {
     id: 7,
@@ -53,7 +53,7 @@ let bookArchive = [
     nombre: "Metodología de investigación Para qué",
     desc: "Este libro se suma a la extensa y variada producción sobre cuestiones metodológicas. No pretendemos ofreceruna mirada original ni fundacional sobre estos saberes, solo aspiramos a participar y tomar posición frente a algunas de las reflexiones y debates que transitan por las aulas",
     img: "metodologia_de_la_investigacion_para_que.PNG",
-    link: "a",
+    link: "https://github.com/ViktorChs",
   },
   {
     id: 8,
@@ -61,7 +61,7 @@ let bookArchive = [
     nombre: "Metodología de investigación 4 edicion",
     desc: "Este libro se suma a la extensa y variada producción sobre cuestiones metodológicas. No pretendemos ofreceruna mirada original ni fundacional sobre estos saberes, solo aspiramos a participar y tomar posición frente a algunas de las reflexiones y debates que transitan por las aulas",
     img: "metodologia_de_la_investigacion_4.PNG",
-    link: "a",
+    link: "https://github.com/ViktorChs",
   },
   {
     id: 9,
@@ -69,7 +69,7 @@ let bookArchive = [
     nombre: "Metodología de investigación Para qué",
     desc: "Este libro se suma a la extensa y variada producción sobre cuestiones metodológicas. No pretendemos ofreceruna mirada original ni fundacional sobre estos saberes, solo aspiramos a participar y tomar posición frente a algunas de las reflexiones y debates que transitan por las aulas",
     img: "metodologia_de_la_investigacion_para_que.PNG",
-    link: "a",
+    link: "https://github.com/ViktorChs",
   },
   {
     id: 10,
@@ -77,7 +77,7 @@ let bookArchive = [
     nombre: "Metodología de investigación 4 edicion",
     desc: "Este libro se suma a la extensa y variada producción sobre cuestiones metodológicas. No pretendemos ofreceruna mirada original ni fundacional sobre estos saberes, solo aspiramos a participar y tomar posición frente a algunas de las reflexiones y debates que transitan por las aulas",
     img: "metodologia_de_la_investigacion_4.PNG",
-    link: "a",
+    link: "https://github.com/ViktorChs",
   },
   {
     id: 11,
@@ -85,7 +85,7 @@ let bookArchive = [
     nombre: "Metodología de investigación Para qué",
     desc: "Este libro se suma a la extensa y variada producción sobre cuestiones metodológicas. No pretendemos ofreceruna mirada original ni fundacional sobre estos saberes, solo aspiramos a participar y tomar posición frente a algunas de las reflexiones y debates que transitan por las aulas",
     img: "metodologia_de_la_investigacion_para_que.PNG",
-    link: "a",
+    link: "https://github.com/ViktorChs",
   },
   {
     id: 12,
@@ -93,7 +93,7 @@ let bookArchive = [
     nombre: "Metodología de investigación 4 edicion",
     desc: "Este libro se suma a la extensa y variada producción sobre cuestiones metodológicas. No pretendemos ofreceruna mirada original ni fundacional sobre estos saberes, solo aspiramos a participar y tomar posición frente a algunas de las reflexiones y debates que transitan por las aulas",
     img: "metodologia_de_la_investigacion_4.PNG",
-    link: "a",
+    link: "https://github.com/ViktorChs",
   },
   {
     id: 13,
@@ -101,7 +101,7 @@ let bookArchive = [
     nombre: "Metodología de investigación Para qué",
     desc: "Este libro se suma a la extensa y variada producción sobre cuestiones metodológicas. No pretendemos ofreceruna mirada original ni fundacional sobre estos saberes, solo aspiramos a participar y tomar posición frente a algunas de las reflexiones y debates que transitan por las aulas",
     img: "metodologia_de_la_investigacion_para_que.PNG",
-    link: "a",
+    link: "https://github.com/ViktorChs",
   },
   {
     id: 14,
@@ -109,6 +109,6 @@ let bookArchive = [
     nombre: "Metodología de investigación 4 edicion",
     desc: "Este libro se suma a la extensa y variada producción sobre cuestiones metodológicas. No pretendemos ofreceruna mirada original ni fundacional sobre estos saberes, solo aspiramos a participar y tomar posición frente a algunas de las reflexiones y debates que transitan por las aulas",
     img: "metodologia_de_la_investigacion_4.PNG",
-    link: "a",
+    link: "https://github.com/ViktorChs",
   },
 ];
