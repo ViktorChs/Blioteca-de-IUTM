@@ -276,7 +276,10 @@ main.content_books {
 }
 #viewbookall {
   background: transparent;
-  border-color: transparent;
+  border: 1px solid;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
 }
 /* state active books */
 .book.active{
@@ -325,8 +328,15 @@ main.content_books {
     flex-direction: column;
     justify-content: space-around;
     z-index: 10000;
+    color: white;
 }
 /* - - - - - - - - - -*/
+.nav_menu-bts-close-menu {
+  background: transparent;
+  border: transparent;
+  font-size: 24px;
+  color: azure;
+}
 .nav_menu-img-book {
   width: 13rem;
   margin: 8px auto;
