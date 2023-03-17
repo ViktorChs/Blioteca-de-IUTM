@@ -257,6 +257,7 @@ main.content_books {
   transition: height 2s ease 10ms;
 
 }
+
 .book img{
   width: 9em;
   height: 10em;
@@ -269,17 +270,17 @@ main.content_books {
   font-size: 12px;
   text-align: center;
   width: 80%;
+  z-index: 10000;
 }
-#viewbookall img {
-  width: 1.5rem;
-  height: 1.5rem;
-}
+
 #viewbookall {
   background: transparent;
-  border: 1px solid;
-  width: 40px;
-  height: 40px;
+  border: transparent;
+  width: 15rem;
+  height: 19rem;
   border-radius: 5px;
+  position: absolute;
+  z-index: 1000;
 }
 /* state active books */
 .book.active{
@@ -289,12 +290,18 @@ main.content_books {
   align-items: center;
   animation: myAnim 1s ease 0s 1 normal forwards;
   flex-wrap: nowrap;
+
+  
 }
 .book img.active {
   width: 5em;
   height: 5em;
   border-radius: 7px 0px 0px 7px;
   object-fit: fill;
+}
+#viewbookall.active{
+  height: 5em;
+  width: 17em;
 }
 /* - - - -  - - - -*/
 .nav_menu-view-book {
@@ -308,7 +315,20 @@ main.content_books {
   align-content: center;
   justify-content: center;
   align-items: flex-end;
+
+  animation: backgrounviewmenu1 1s ease 0s 1 normal both;
 }
+@keyframes backgrounviewmenu1 {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+
 
 .nav_menu-background-active {
   width: 100vw;
@@ -318,7 +338,27 @@ main.content_books {
   flex-direction: column;
   align-content: center;
   justify-content: space-evenly;
+
+  animation: backgrounviewmenu 2s ease 0s 1 normal both;
+
 }
+@keyframes backgrounviewmenu {
+	0% {
+		
+		transform: translateX(350px);
+	}
+
+	100% {
+		
+		transform: translateX(0);
+	}
+}
+
+.nav_menu-h2-title-book {
+  animation: backgrounviewmenu-title 1.4s ease 1.8s 1 normal both;
+}
+
+
 .nav_menu-content-info-book {
   margin: 30px 20px;
   width: 90vw;
@@ -341,11 +381,30 @@ main.content_books {
   width: 13rem;
   margin: 8px auto;
   z-index: 10000;
+
 }
+.nav_menu-img-book{
+  animation: backgrounviewmenu-title 1.4s ease 2.5s 1 normal both;
+
+}
+
 .nav_menu-a-description {
   color:  #a5a5a5fa;
   font-size: 14px;
   z-index: 10000;
+  
+  animation: backgrounviewmenu-title 1.4s ease 3.4s 1 normal both;
+}
+@keyframes backgrounviewmenu-title {
+	0% {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 .nav_menu-bts-download {
   width: 13rem;
@@ -359,6 +418,9 @@ main.content_books {
   align-items: center;
   justify-content: center;
   z-index: 10000;
+
+  animation: backgrounviewmenu-title 1.4s ease 4s 1 normal both;
+
 }
 
 .deco1 {
@@ -376,6 +438,20 @@ main.content_books {
   transform: rotate(269deg);
   z-index: 1;
 }
+
+@keyframes backgrounviewmenu-title-exit {
+	0% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateX(350px);
+	}
+}
+
+
 /* - - - - - -- - - */
 @media only screen and (min-width: 595px) {
   .input-field.input-field.first-wrap{

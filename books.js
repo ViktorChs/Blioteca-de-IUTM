@@ -8,11 +8,12 @@ const viewmenubook = document.querySelector(".nav_menu-view-book")
 /* entrada principal de los libros */
 bookArchive.forEach((book) => {
   const div = document.createElement("div");
+  div.id.add
   div.classList.add("book");
   div.innerHTML = `
     <img src=${book.img} alt="">
     <h3>${book.nombre}</h3>
-    <button onclick="viewBook(${book.id})" id="viewbookall" class="viewBook" type="button"><img src="book-open.svg"></button>
+    <button onclick="viewBook(${book.id})" id="viewbookall" class="viewBook" type="button"></button>
     `;
   print1.appendChild(div);
 });
@@ -28,7 +29,7 @@ function filterM() {
       div.innerHTML = `
       <img  src=${book.img} alt="">
       <h3>${book.nombre}</h3>
-      <button onclick="viewBook(${book.id})" id="viewbookall" class="viewBook" type="button"><img src="book-open.svg"></button>
+      <button onclick="viewBook(${book.id})" id="viewbookall" class="viewBook" type="button"></button>
       `;
       print1.appendChild(div);
     } else if (category.value == "Materias" || book.id == Number) {
@@ -37,7 +38,7 @@ function filterM() {
       div.innerHTML = `
       <img src=${book.img} alt="">
       <h3>${book.nombre}</h3>
-      <button onclick="viewBook(${book.id})" id="viewbookall" class="viewBook" type="button"><img src="book-open.svg"></button>
+      <button onclick="viewBook(${book.id})" id="viewbookall" class="viewBook" type="button"></button>
 
       `;
       print1.appendChild(div);
@@ -54,15 +55,19 @@ buttonSearch.addEventListener("click", () => {
 /* cambio de forma de la plantillas de libros  */
 const bookmorf = document.querySelectorAll(".book");
 const bookmorfImg = document.querySelectorAll(".book img");
+const bookbts = document.querySelectorAll("#viewbookall")
 
 function removeActiveMorfBooks() {
   bookmorf.forEach((x) => x.classList.add("active"));
   bookmorfImg.forEach((x) => x.classList.add("active"));
+  bookbts.forEach((x) => x.classList.add("active"));
+
 }
 
 function addActiveMorfBooks() {
   bookmorf.forEach((x) => x.classList.remove("active"));
   bookmorfImg.forEach((x) => x.classList.remove("active"));
+  bookbts.forEach((x) => x.classList.remove("active"));
 }
 /*   */
 
@@ -95,14 +100,19 @@ const div = document.createElement("div");
       
     }
   })
+  const btscloseanim = document.querySelector('.nav_menu-background-active')
   const btsCloseMenu = document.querySelector('.nav_menu-bts-close-menu');
+
 function closeMenu() {
   viewmenubook.style.display = "none";
   viewmenubook.innerHTML = "";
 }
 
 btsCloseMenu.addEventListener('click', () =>{
- closeMenu()
+  btscloseanim.style.animation = "backgrounviewmenu-title-exit 1.4s ease 0s 1 normal none"
+
+  window.setTimeout(closeMenu, 1000);
+ 
 })
 
 }
