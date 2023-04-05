@@ -1,19 +1,333 @@
 * {
   margin: 0;
   padding: 0;
-  /*overflow: hidden;*/
+  
 }
+
 body{
   background:#ebe9ec;
 }
+.nav_bar {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+ 
+}
 
-.body_Img-Logo {
+.nav_bar-Img-Logo {
   margin: 0 15px;
   width: 80px;
   max-width: 100%;
   display: block;
 }
+.etc{
+  width: 35px;
+  height: 35px;
+  display: none;
+  align-items: center;
+    justify-content: center;
+    border: transparent;
+    background: transparent;
+    z-index: 3;
+}
+.etc img{
+  width: 25px;
+  height: 25px;
+  margin-right: 35px;
 
+}
+
+/* aaaaaaaaaaaaaaaaaaaa*/
+
+.maincontent {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  align-items: center;
+  background: #ffffff9e;
+  margin: 4.5rem;
+}
+.maincontent p {
+  font-size: 2rem;
+  color: #22262b;
+  margin: 3rem 0;
+  font-family: 'Alegreya Sans';
+}
+
+.contenedor_books {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  max-width: 68rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.newbooks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  margin: 1rem .6rem;
+  transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+
+}
+.newbooks:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+  background: #ffffff;
+}
+
+.imgcontent {
+  width: 9rem;
+  height: 13rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 19px 20px -6px rgb(0 0 0 / 53%);
+  -webkit-box-shadow: 0px 19px 20px -6px rgb(0 0 0 / 53%);
+  -moz-box-shadow: 0px 19px 20px -6px rgba(0,0,0,0.53);
+}
+.imgcontent img {
+  width: 9rem;
+  height: 13rem;
+}
+.titlecontent {
+  font-size: 11px;
+  width: 10rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.titlecontent h3 {
+  width: 10em;
+  font-family: 'Alegreya Sans';
+  font-weight: 300;
+  font-size: .9rem;
+}
+.vertodo {
+  width: 80vw;
+  height: 3rem;
+  background: transparent;
+  border: solid 1px cadetblue;
+  color: cadetblue;
+  font-size: medium;
+  font-weight: 900;
+  margin: 3rem;
+}
+.vertodo:hover {
+    background: cadetblue;
+    color: white;
+}
+/* wwwwwwwwwwwwwwwwwwwwwww*/
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.social-media {
+  margin: 5px 0px;
+}
+
+.social-media a {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  color: #333333b0;
+}
+
+.social-media a:hover {
+  color: #007bff;
+}
+
+.social-media i {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.social-media span {
+  font-size: 12px;
+  text-align: center;
+}
+.containerFooterSocialMedia {
+  width: 17rem;
+}
+.containerFooterSocialMedia p {
+  font-size: 12px;
+  color: #333333b0;
+  margin: 10px 0;
+}
+
+/*------------------------ */
+#checklist-items li.hidden {
+  display: none !important;
+}
+.checklist {
+  border: transparent;
+  padding: 10px;
+  margin: 10px;
+  font-family:'Alegreya Sans';
+  width: 21rem;
+color: black;
+}
+
+.checklist h2 {
+  font-size: 23px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.checklist li {
+  margin-bottom: 5px;
+}
+
+.checklist input[type="checkbox"] {
+  display: none;
+}
+.checklist li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.checklist li :hover {
+  background: rgb(69 140 149);
+  color: antiquewhite;
+}
+
+
+input[type="checkbox"]:checked + label {
+  background: #92fffa59;
+}
+.checklist li label {
+  width: 14rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  padding-left: 14px;
+  font-size: 22px;
+}
+
+.hidden {
+  display: none;
+}
+.more-hidden {
+  display: none;
+  visibility: hidden;
+  height: 0;
+  padding: 0;
+  margin: 0;
+}
+.collapsed {
+  display: none;
+}
+/* --------------------------------*/
+
+
+
+
+
+.menu {
+  z-index: 2;
+  top: 0;
+  right: 0;
+  display: flex;
+  place-items: center;
+  width: 100vw;
+  height: calc(100%);
+  background: #f1f1f1;
+  translate: 100% 0;
+  transition: translate 0.375s cubic-bezier(0.175, 0.885, 0.32, 1);
+  position: fixed;
+  overflow-y: scroll;
+  flex-direction: column;
+}
+
+.menu nav {
+  opacity: 0;
+}
+
+@keyframes menu-in {
+  0% {
+    clip-path: ellipse(60% 60% at 100% 50%);
+  }
+  100% {
+    clip-path: ellipse(120% 120% at 100% 50%);
+  }
+}
+
+.open .menu {
+  opacity: 1;
+  visibility: visible;
+  translate: 0;
+  animation: menu-in 0.375s;
+}
+
+.open .menu nav {
+  opacity: 1;
+}
+
+.menu nav:hover a {
+  opacity: 0.25;
+}
+
+.menu nav a:hover {
+  opacity: 1;
+}
+
+.menu nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.menu a::before {
+  opacity: 0;
+  background: rgb(255 255 255 / 20%);
+}
+
+.menu a::after {
+  transform: scaleX(0);
+  transform-origin: 0% 50%;
+  background: #f7f7f7;
+}
+
+.menu a:hover::before {
+  opacity: 1;
+}
+
+.menu a:hover::after {
+  transform: scaleX(1);
+}
+
+body.open .menu a {
+  /*animation: appear 0.25s backwards;*/
+}
+
+
+/* ---------------------------*/
+.nav_bar-menu-main-content {
+  width: 24rem;
+  height: 100vh;
+  background: red;
+  display: block;
+  position: fixed;
+  top: 0;
+  right: -24rem;
+}
+/*                       */
 .body_Container-Center-Img {
   display: flex;
   margin: auto;
@@ -36,8 +350,11 @@ body{
   height: 700px;
   position: fixed;
   border-radius: 50%;
-  top: -8%;
-  right: -44vw;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
 }
 .loader::after{
   opacity: 0;
@@ -208,10 +525,13 @@ svg.svg-inline--fa.fa-search.fa-w-16 {
 }
 /*- - - - -*/
 
+/*----------------------*/
 .section_2{
   display: none;
   flex-direction: column;
   font-family: 'Nunito', sans-serif;
+  overflow-x: hidden;
+  align-items: center;
 }
 .section_2-books-display-bts{
 display: flex;
@@ -231,7 +551,94 @@ gap: 10px;
     transition: all 0.2s ease;
 
 }
+/*-*/
 
+
+ 
+
+.textodeco {
+  width: 80vw;
+  font-size: 34px;
+  color: white;
+  font-family: 'Alegreya Sans', sans-serif;
+  animation: text 3s ease 0s 1 normal forwards;
+}
+
+
+  .textodesc {
+    width: 85vw;
+    font-size: 22px;
+    color: white;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 300;
+    animation: text 3s ease 0s 1 normal forwards;
+}
+  @keyframes text {
+    0% {
+      opacity: 0;
+      transform: rotateX(-100deg);
+      transform-origin: top;
+    }
+  
+    100% {
+      opacity: 1;
+      transform: rotateX(0deg);
+      transform-origin: top;
+    }
+  }
+
+.contenedorprimario {
+  width: 83vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: unset;
+}
+
+.cantidadlibros {
+  width: 90vw;
+  height: 13rem;
+  background: #ffffff;
+  display: flex;
+  margin: auto;
+  border-radius: 32px;
+}
+.Txtlibro {
+  background: white;
+  width: 20%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.Logo {
+  width: 11rem;
+}
+.Logo {
+  width: 7rem;
+}
+
+
+.TxtRevista {
+  background: white;
+  width: 20%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.numberbook {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+/* - */
 main.content_books {
   width: 100%;
   display: flex;
@@ -244,8 +651,8 @@ main.content_books {
 }
 .book {
   background: rgb(255 255 255);
-  height: 19rem;
-  width: 15rem;
+  height: 16.5rem;
+  width: 11rem;
   max-width: 371px;
   border-radius: 6px;
   display: flex;
@@ -260,8 +667,7 @@ main.content_books {
 
 .book img{
   width: 9em;
-  height: 10em;
-  border-radius: 7px;
+    height: 11em;
   object-fit: fill;
   transition: height 2s ease 10ms;
 
@@ -270,14 +676,13 @@ main.content_books {
   font-size: 12px;
   text-align: center;
   width: 80%;
-  z-index: 10000;
 }
 
 #viewbookall {
   background: transparent;
   border: transparent;
-  width: 15rem;
-  height: 19rem;
+  width: 11rem;
+  height: 16.5rem;
   border-radius: 5px;
   position: absolute;
   z-index: 1000;
@@ -451,7 +856,47 @@ main.content_books {
 	}
 }
 
+/*section 3*/
+section.section_3 {
+  /*width: 100%;*/
+  display: none;
+  flex-direction: column-reverse;
+  align-items: center;
 
+}
+
+.content_books {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90vw;
+}
+#pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination-button {
+  background: #4796a68a;
+  border: none;
+  cursor: pointer;
+  font-size: 19px;
+    margin: 24px 6px;
+    padding: 10px;
+    color: white;
+    border-radius: 40px;
+}
+
+.active {
+  font-weight: bold;
+}
+.pagination-button i {
+  font-size: 1.2rem;
+  margin-top: -1px;
+  margin-right: 5px;
+}
 /* - - - - - -- - - */
 @media only screen and (min-width: 595px) {
   .input-field.input-field.first-wrap{
@@ -475,6 +920,67 @@ main.content_books {
     top: 63%;
     right: 37%;
   }
+  .contenedorprimario {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.textodeco {
+  width: 36rem;
+  font-size: 71px;
+  color: white;
+  font-family: 'Alegreya Sans', sans-serif;
+  animation: text 3s ease 0s 1 normal forwards;
+}
+.textodesc {
+  width: 36rem;
+  font-size: 22px;
+  color: white;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 300;
+  animation: text 3s ease 0s 1 normal forwards;
+}
+
+.nav_bar {
+  position: relative;
+}
+/*---*/
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #f9f9f9;
+  padding: 20px 20px 2px 20px;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+.contentinfo1 {
+  display: flex;
+  gap: 14px;
+}
+.contentinfo2 {
+  margin: 1px 39px;
+}
+.containerFooterSocialMedia2 {
+  font-size: 10px;
+  border-top: solid 1px lightgray;
+  color: grey;
+}
+.menu{
+  width: 300px;
+}
+.checklist{
+  width: 14rem;
+}
+.checklist h2{
+  font-size: 18px;
+}
+.checklist li label {
+  font-size: 1rem;
+}
 }
 
 @media only screen and (min-width: 992px) {

@@ -1,92 +1,260 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="BiblioStyle.css" type="text/css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Quicksand:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;500;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/your-key.js"
+      crossorigin="anonymous"
+    ></script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="BiblioStyle.css" type="text/css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Quicksand:wght@500&display=swap" rel="stylesheet">
     <title>Biblioteca virtual</title>
-</head>
+  </head>
 
-<body>
-    <img class="body_Img-Logo" link="#" src="Logo.png" alt="">
+  <body>
+    <div class="nav_bar">
+      <a><img class="nav_bar-Img-Logo" link="" src="Logo.png" alt="" /></a>
+      <div class="123">
+        <a><span>Inicio</span></a>
+        <a><span>Biblioteca</span></a>
+        <a><span>Contactos</span></a>
+        <a><span>Pedidos</span></a>
+        <button class="burger etc openMenuFilters" onclick="toggleMenuf()">
+        <img src="menu.png" />
+      </div>
+      
+
+      
+      </button>
+    </div>
+
     <section class="section_ini">
-        <div class="body_Container-Center-Img">
-            <h1 class="body_Center-Img-Text">BIBLIOTECA</h1>
-            <img class="body_Center-Img" src="Group.png" alt="">
-            
-        </div>
-        <span class="loader"></span>
-        <div class="body_Container-Text-Description">
-            <div class="body_Lineup-Text"></div>
-            <p class="body_Text-Description">Biblioteca virtual dedicada a los estudiantes de IUTM Sub-Region Guajira
-                para facilitar el contenido de libros virtuales</p>
-        </div>
-        <div class="body_Container-Button-Arrow">
+      <div class="body_Container-Center-Img">
+        <h1 class="body_Center-Img-Text">BIBLIOTECA</h1>
+        <img class="body_Center-Img" src="Group.png" alt="" />
+      </div>
+      <span class="loader"></span>
+      <div class="body_Container-Button-Arrow">
+        <button class="body_Content-Info"><img src="menu.png" alt="" /></button>
 
-            <button class="body_Content-Info"><img src="menu.png" alt=""></button>
-            
-            <button class="body_Content-Arrow"><img src="right-arrow.png" alt=""></button>
-        </div>
+        <button class="body_Content-Arrow">
+          <img src="right-arrow.png" alt="" />
+        </button>
+      </div>
     </section>
     <section class="section_2">
-        <div class="section_2-h4-container">
-            <h4>¡Encuentra el mejor libro hoy!</h3>
+      <div class="contenedorprimario">
+        <div>
+          <p class="textodeco">Un libro es un regalo</p>
+          <p class="textodeco">que puedes abrir</p>
+          <p class="textodeco">una y otra vez</p>
+          <p class="textodesc">
+            "Explora nuestra biblioteca virtual y accede a miles de libros y
+            recursos en línea desde la comodidad de tu hogar. ¡Lee, aprende y
+            diviértete con nosotros!"
+          </p>
         </div>
-        
-            
-            <div class="s003">
-                <form>
-                <div class="inner-form">
-                <div class="input-field first-wrap">
-                <div class="input-select">
-                <select onchange="filterM()"  data-trigger="" name="choices-single-defaul">
-                <option placeholder="">Materias</option>
-                <option>Matematica</option>
-                <option>Sociocritica</option>
-                <option>Programacion</option>
-                <option>Proyecto</option>
-                <option>Algoritmo</option>
-                </select>
-                </div>
-                </div>
-                <div class="input-field second-wrap">
-                <input id="search" type="text" placeholder="Que libro Buscas?" />
-                </div>
-                <div class="input-field third-wrap">
-                <button class="btn-search" type="button">
-                <svg class="svg-inline--fa fa-search fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
-                </svg>
-                </button>
-                </div>
-                
-                </div>
-                
 
-                </form>
-                </div>
-                <div class="section_2-books-display-bts">
-                    <button onclick="removeActiveMorfBooks()" class="section_2-bts-module-display descending"><img src="descending.svg" alt=""></button>
-                <button onclick="addActiveMorfBooks()" class="section_2-bts-module-display grid"><img src="grid.svg" alt=""></button>
-                </div>
-                
-        <main class="content_books">
-        </main>
-        <nav class="nav_menu-view-book">
-           
-        </nav>
+        <img
+          class="gifimagen"
+          src="61e929ff713f410571efc78b_hero_illustr.svg"
+          alt="Descripción del GIF"
+        />
+      </div>
+      <div class="cantidadlibros"></div>
 
+      <div class="maincontent">
+        <p>Libros agregado recientemente</p>
+        <div class="contenedor_books"></div>
+        <button class="vertodo">ver todos</button>
+      </div>
+      <footer>
+        <div class="contentinfo1">
+          <div class="containerFooterSocialMedia">
+            <div class="titlesocialmedia">
+              Mantente en contacto con nosotros
+            </div>
+            <div class="social-media">
+              <a href="https://www.facebook.com/"
+                ><i class="fab fa-facebook"></i><span>Facebook</span></a
+              >
+            </div>
+            <div class="social-media">
+              <a href="https://www.instagram.com/"
+                ><i class="fab fa-instagram"></i><span>Instagram</span></a
+              >
+            </div>
+            <div class="social-media">
+              <a href="https://github.com/"
+                ><i class="fab fa-github"></i><span>GitHub</span></a
+              >
+            </div>
+            <div class="social-media">
+              <a href="mailto:example@example.com"
+                ><i class="fas fa-envelope"></i><span>Email</span></a
+              >
+            </div>
+          </div>
+          <div class="containerFooterSocialMedia">
+            <div class="footerUbicacion">Nuestra oficina principal</div>
+            <p>
+              Dirección: Av. Principal, Urb. La Cabimas, San Rafael del Moján,
+              Municipio Mara, Páez, Estado Zulia.
+            </p>
+            <p>Teléfono: (0262) 872.19.79 (0414) 613.16.86</p>
+            <p>Correo: mailto:example@example.com</p>
+          </div>
+        </div>
+
+        <div class="contentinfo2">
+          <div class="containerFooterSocialMedia2">
+            <div class="footerUbicacion">UTPMA Biblioteca virtual</div>
+            <p>
+              Esta pagina web fue creada para el facilitamiento de los libros
+              necesarios hacia los estudiantes del plantel mediante la creacion
+              en el proyecto del trayecto 2
+            </p>
+          </div>
+        </div>
+      </footer>
     </section>
-</body>
-<script src="Libros.js"></script>
-<script src="js.js"></script>
-<script src="books.js"></script>
+    <section class="section_3">
+      <div class="menu">
+        <a><img class="nav_bar-Img-Logo" link="" src="Logo.png" alt="" /></a>
+
+        <div class="checklist">
+          <h2 id="checklist-Formato">Formato</h2>
+          <ul id="checklist-items-formato" class="fade-out">
+            <li>
+              <input type="checkbox" id="Formato1" value="Libro" />
+              <label for="Formato1">Libro</label>
+            </li>
+            <li>
+              <input type="checkbox" id="Formato2" value="Revista" />
+              <label for="Formato2">Revista</label>
+            </li>
+          </ul>
+        </div>
+        <div class="checklist">
+          <h2 id="checklist-PNF">PNF</h2>
+          <ul id="checklist-items-PNF" class="fade-out">
+            <li>
+              <input
+                type="checkbox"
+                id="Administracion"
+                value="Administracion"
+              /><label for="Administracion">Administracion</label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                id="Agroalimentacion"
+                value="Agroalimentacion"
+              /><label for="Agroalimentacion">Agroalimentacion</label>
+            </li>
+            <li>
+              <input type="checkbox" id="Contaduria publica" value="Contaduria publica" /><label for="Contaduria publica">Contaduria publica</label>
+            </li>
+            <li>
+              <input type="checkbox" id="Informatica" value="Informatica"/><label for="Informatica">Informatica</label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                id="Medicina veterinaria"
+                value="Medicina veterinaria"
+              /><label for="Medicina veterinaria">Medicina veterinaria</label>
+            </li>
+          </ul>
+        </div>
+        <div class="checklist">
+          <h2 id="checklist-materia">Materia</h2>
+          <ul id="checklist-items-materia" class="fade-out">
+            <li>
+              <input type="checkbox" id="Matematica" value="Matematica" /><label
+                for="Matematica"
+                >Matematica</label
+              >
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                id="Programacion"
+                value="Programacion"
+              /><label for="Programacion">Programacion</label>
+            </li>
+            <li>
+              <input type="checkbox" id="Proyecto" value="Proyecto" /><label
+                for="Proyecto"
+                >Proyecto</label
+              >
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                id="Sociocritica"
+                value="Sociocritica"
+              /><label for="Sociocritica">Sociocritica</label>
+            </li>
+            <li>
+              <input type="checkbox" id="tarea5" value="" /><label for=""
+                >Tarea 5</label
+              >
+            </li>
+            <li>
+              <input type="checkbox" id="tarea6" value="" /><label for=""
+                >Tarea 6</label
+              >
+            </li>
+            <li>
+              <input type="checkbox" id="tarea7" value="" /><label for=""
+                >Tarea 7</label
+              >
+            </li>
+            <li>
+              <input type="checkbox" id="tarea8" value="" /><label for=""
+                >Tarea 8</label
+              >
+            </li>
+            <li>
+              <input type="checkbox" id="tarea9" value="" /><label for=""
+                >Tarea 9</label
+              >
+            </li>
+            <li>
+              <input type="checkbox" id="tarea10" value="" /><label for=""
+                >Tarea 10</label
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="print1"></div>
+      <div id="pagination"></div>
+      <div class="content_books"></div>
+      <nav class="nav_menu-view-book"></nav>
+    </section>
+  </body>
+  <script src="Libros.js"></script>
+  <script src="js.js"></script>
+  <script src="books.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </html>
-
-
