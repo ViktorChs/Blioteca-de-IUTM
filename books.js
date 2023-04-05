@@ -15,7 +15,6 @@ bookArchive.forEach((book) => {
     <div class="imgcontent" ><img  src=${book.img} alt=""></div>
     <div class="titlecontent" ><h3>${book.nombre}</h3></div>
     </div>
-    
     `;
     newbooks.appendChild(div);
   }});
