@@ -117,7 +117,7 @@ function renderBooks() {
 // Función para renderizar la barra de paginación
 // Función para filtrar los libros según los valores de los checkboxes marcados
 let currentPage = 1;
-const booksPerPage = 14;
+const booksPerPage = 12;
 const totalPages = Math.ceil(bookArchive.length / booksPerPage);
 
 

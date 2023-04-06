@@ -4,17 +4,27 @@ const twoSection = document.querySelector('.section_2')
 const threSection = document.querySelector('.section_3')
 
 const toggleMenuFilters = document.querySelector('.etc')
+const blockmenubooks = document.querySelector('.blockcontentmenuopen')
 
 var checklistFormato = document.getElementById("checklist-Formato");
 var checklistPNF = document.getElementById("checklist-PNF");
 var checklistMateria = document.getElementById("checklist-materia");
 
-const toggleMenuf = () => document.body.classList.toggle("open");
+//const toggleMenuf = () => ;
 
+function toggleMenuf() {
+  blockmenubooks.classList.toggle("open")
+document.body.classList.toggle("open")
+}
+
+const btsmenu = document.querySelector('.btsnavbar')
 function timeouttoggle(){
+  toggleMenuFilters.style.display = "none";
+
+    threSection.style.display = "none";
     oneSection.style.display = "none";
     twoSection.style.display = "flex";
-    navbar.style.position = "absolute";
+    btsmenu.style.display = "flex";
     
 
 

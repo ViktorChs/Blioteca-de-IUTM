@@ -6,6 +6,7 @@
 
 body{
   background:#ebe9ec;
+  height: 100%;
 }
 .nav_bar {
   display: flex;
@@ -13,6 +14,21 @@ body{
   flex-direction: row;
   justify-content: space-between;
  
+}
+.btsnavbar a {
+  color: white;
+  font-size: 1.1rem;
+  font-family: 'Alegreya Sans';
+  margin: 0 14px;
+  cursor: pointer;
+  border-bottom: solid 0px wheat;
+  transition: border 1s ease-in-out;
+}
+.btsnavbar a span {
+  padding: 25px 0;
+}
+.btsnavbar a :hover {
+  border-bottom: solid 2px wheat;
 }
 
 .nav_bar-Img-Logo {
@@ -36,6 +52,9 @@ body{
   height: 25px;
   margin-right: 35px;
 
+}
+.btsnavbar{
+  display: none;
 }
 
 /* aaaaaaaaaaaaaaaaaaaa*/
@@ -70,9 +89,21 @@ body{
   flex-direction: column;
   gap: 10px;
   margin: 1rem .6rem;
-  transition: transform 0.3s ease-in-out;
+  
     border-radius: 10px;
+    animation: booksall 1s ease 0s 1 normal forwards;
+transition: transform 0.3s ease-in-out;
+}
+@keyframes booksall {
+	0% {
+		opacity: 0;
+		transform: translateY(-80px);
+	}
 
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 .newbooks:hover {
   transform: scale(1.1);
@@ -251,6 +282,16 @@ input[type="checkbox"]:checked + label {
   overflow-y: scroll;
   flex-direction: column;
 }
+.blockcontentmenuopen {
+  background: #55555578;
+  width: 100vw;
+  height: 111vh;
+  position: absolute;
+  display: none;
+}
+.open .blockcontentmenuopen {
+  display: flex;
+}
 
 .menu nav {
   opacity: 0;
@@ -312,9 +353,6 @@ input[type="checkbox"]:checked + label {
   transform: scaleX(1);
 }
 
-body.open .menu a {
-  /*animation: appear 0.25s backwards;*/
-}
 
 
 /* ---------------------------*/
