@@ -7,7 +7,7 @@ const viewmenubook = document.querySelector(".nav_menu-view-book")
 const newbooks = document.querySelector(".contenedor_books")
 
 bookArchive.forEach((book) => {
-  if (book.id <= 12) {
+  if (book.id <= 136) {
     const div = document.createElement("div");
     div.classList.add("newbooks");
     div.setAttribute("onclick", `viewBooknew(${book.id})`);
@@ -20,41 +20,11 @@ bookArchive.forEach((book) => {
   }});
 
 
-  const cantidadLibros = bookArchive.reduce((contador, objeto) => {
-    if (objeto.formato === "libro") {
-      contador++;
-    }
-    return contador;
-  }, 0);
-  
-  const cantidadRevistas = bookArchive.reduce((contador, objeto) => {
-    if (objeto.formato === "revista") {
-      contador++;
-    }
-    return contador;
-  }, 0);
-  const contenedornum = document.querySelector(".cantidadlibros")
-const numlr = document.createElement("div");
-numlr.classList.add("numberbook");
-numlr.innerHTML= `
-<div class="Txtlibro">
-<img src="icons8-open-book.gif" alt="">
-<span>${cantidadLibros}</span>
-<p> Total de libros </p>
-</div>
-
-<div class="centerimg"><img class="Logo" src="Logo.png" alt=""/></div>
-<div class="TxtRevista">
-<img src="icons8-magazine-50.png" alt="">
-<span>${cantidadRevistas}</span>
-<p>Total de revistas </p></div>
-`
-contenedornum.appendChild(numlr)
 /* entrada principal de los libros */
 
 // Obtener los checkboxes de los filtros
 let checkboxesFormato = document.querySelectorAll("#checklist-items-formato input[type=checkbox]");
-let checkboxesPNF = document.querySelectorAll("#checklist-items-PNF input[type=checkbox]");
+let checkboxesPNF = document.querySelectorAll("#checklist-items-pnf input[type=checkbox]");
 let checkboxesMateria = document.querySelectorAll("#checklist-items-materia input[type=checkbox]");
 
 // Función para obtener el valor de los checkboxes marcados
@@ -117,51 +87,13 @@ function renderBooks() {
 // Función para renderizar la barra de paginación
 // Función para filtrar los libros según los valores de los checkboxes marcados
 let currentPage = 1;
-const booksPerPage = 12;
+const booksPerPage = 136;
 const totalPages = Math.ceil(bookArchive.length / booksPerPage);
 
 
-function filtrarLibros(currentPage) {
-  const valoresCheckboxes = obtenerValoresCheckboxes();
-
-  const startIndex = (currentPage - 1) * booksPerPage; // índice del primer libro en la página actual
-  const endIndex = startIndex + booksPerPage; // índice del último libro en la página actual
-  let librosFiltrados = bookArchive.slice(startIndex, endIndex); // libros a renderizar
-
-  if (valoresCheckboxes.formato.length > 0) {
-    librosFiltrados = librosFiltrados.filter((libro) => valoresCheckboxes.formato.includes(libro.formato));
-  }
-
-  if (valoresCheckboxes.pnf.length > 0) {
-    librosFiltrados = librosFiltrados.filter((libro) => valoresCheckboxes.pnf.includes(libro.pnf));
-  }
-
-  if (valoresCheckboxes.materia.length > 0) {
-    librosFiltrados = librosFiltrados.filter((libro) => valoresCheckboxes.materia.includes(libro.materia));
-  }
-
-  return librosFiltrados;
-}
-
-// Función para renderizar los libros filtrados
-function renderBooks(currentPage) {
-  const librosFiltrados = filtrarLibros(currentPage);
-
-  print1.innerHTML = ""; // limpiar el contenedor de libros
-  librosFiltrados.forEach((book) => {
-    const div = document.createElement("div");
-    div.setAttribute("onclick", `viewBook(${book.id})`);
-    div.classList.add("newbooks");
-    div.innerHTML = `
-      <div class="imgcontent"><img src="${book.img}" alt=""></div>
-      <div class="titlecontent"><h3>${book.nombre}</h3></div>
-    `;
-    print1.appendChild(div);
-  });
-}
 
 // Función para renderizar la barra de paginación
-function renderPagination() {
+function renderPagination(currentPage) {
   pagination.innerHTML = ""; // limpiar la barra de paginación
   for (let i = 1; i <= totalPages; i++) {
     const button = document.createElement("button");
@@ -294,7 +226,7 @@ function viewBook(prodId){
 const div = document.createElement("div");
   div.classList.add("nav_menu-background-active");
   div.innerHTML = `
-  <div class="nav_menu-content-info-book">
+  <div class="nav_menu-content-info-book" onclick="animarDiv(this)">
   <button class="nav_menu-bts-close-menu" >x</button>
    <h2 class="nav_menu-h2-title-book">${book.nombre}</h2>
    <img class="nav_menu-img-book" src="${book.img}" alt="">
@@ -328,7 +260,7 @@ btsCloseMenu.addEventListener('click', () =>{
  
 })
 
-}
+}/*
 const navbar = document.querySelector('.nav_bar')
 const openbiblio = document.querySelector('.vertodo')
 function openbiblioteca() {
@@ -340,7 +272,4 @@ function openbiblioteca() {
 openbiblio.addEventListener('click',() =>  {
   openbiblioteca()
 })
-
-function aaa(){
-  document.querySelectorAll(".pagination-button")[1].click();
-}
+*/
